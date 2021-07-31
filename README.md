@@ -1,4 +1,4 @@
-# dotfiles
+# Dotfiles
 This is my personal linux config
 
 ## Prerequisite
