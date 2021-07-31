@@ -11,4 +11,4 @@ This is my personal linux config
 * **Terminal:** urxvt, urxvt-perls (for kb shortcuts)
 * **Sysmon:** htop
 
-
+Format: ![preview](preview.png)
