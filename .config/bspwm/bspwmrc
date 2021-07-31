@@ -1,0 +1,28 @@
+#! /bin/sh
+
+## Del4y Config ##
+
+# Autostarting
+fc-cache -f &
+picom -b &
+dunst &
+xrdb ~/.Xresources &
+~/.fehbg &
+~/.config/polybar/launch.sh &
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+# Bspwm stuff
+bspc monitor -d I II III IV V VI VII
+
+bspc config border_width         2
+bspc config window_gap          12
+
+bspc config split_ratio          0.6
+bspc config borderless_monocle   false
+bspc config gapless_monocle      false
+bspc config focus_follows_pointer false
+
+# Bspwm border color
+bspc config normal_border_color \#646D7E
+bspc config focused_border_color \#5CB3FF
