@@ -10,5 +10,3 @@ This is my personal linux config
 * **Notification Daemon:** dunst
 * **Terminal:** urxvt, urxvt-perls (for kb shortcuts)
 * **Sysmon:** htop
-
-**Screenshot:** ![preview](preview.png)
