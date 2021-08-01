@@ -69,11 +69,13 @@ modules-left = previous playpause next spotify
 
 [bar/tray]
 inherit = bar/base
-width = 12.5%
+width = 17.5%
 
-offset-x = 86.85%
+offset-x = 81.85%
 
-modules-left = wlan pulseaudio time 
+modules-center = wlan pulseaudio time 
+
+tray-position = left
 
 ;                      _       _           
 ;  _ __ ___   ___   __| |_   _| | ___  ___ 
