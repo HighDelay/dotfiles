@@ -1,7 +1,7 @@
 # Dotfiles
 This is my personal linux config
 
-## Prerequisite
+## Dependencies
 
 * **WM:** bspwm
 * **Bar:** polybar
