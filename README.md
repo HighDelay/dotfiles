@@ -10,6 +10,7 @@ This is my personal linux config
 * **Notification Daemon:** dunst
 * **Terminal:** urxvt, urxvt-perls (for kb shortcuts)
 * **Sysmon:** htop
+* **Font:** Cozette, FontAwesome5, IPAGothic
 
 ### Screenshots
 ![1](/screenshots/1.png)
