@@ -10,3 +10,8 @@ This is my personal linux config
 * **Notification Daemon:** dunst
 * **Terminal:** urxvt, urxvt-perls (for kb shortcuts)
 * **Sysmon:** htop
+
+### Screenshots
+![1](/screenshots/1.png)
+![2](/screenshots/2.png)
+![3](/screenshots/3.png)
