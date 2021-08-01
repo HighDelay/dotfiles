@@ -59,7 +59,7 @@ inherit = bar/base
 enable-ipc = true
 width = 25%
 
-offset-x = 37.5%
+offset-x = 37.2%
 
 ; Spotify (uses playerctl, spotify-status.py)
 ; modules-left = previous playpause next 
@@ -73,7 +73,7 @@ width = 17.5%
 
 offset-x = 81.85%
 
-modules-center = wlan pulseaudio time 
+modules-center = pulseaudio time 
 
 tray-position = left
 
