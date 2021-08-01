@@ -1,7 +1,7 @@
 configuration {
-	font:							"Terminus 9";
+	font:							"CozetteVector 9";
     show-icons:                     true;
-	icon-theme: 					"Papirus";
+	icon-theme: 					"FontAwesome5Free";
     display-drun: 					"";
     drun-display-format:            "{name}";
     disable-history:                false;
