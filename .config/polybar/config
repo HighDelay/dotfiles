@@ -59,7 +59,7 @@ inherit = bar/base
 enable-ipc = true
 width = 25%
 
-offset-x = 37.2%
+offset-x = 37.5%
 
 ; Spotify (uses playerctl, spotify-status.py)
 ; modules-left = previous playpause next 
