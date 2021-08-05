@@ -3,14 +3,15 @@
 ## Del4y Config ##
 
 # Autostarting
+pgrep -x sxhkd > /dev/null || sxhkd &
+
 fc-cache -f &
 picom -b &
 dunst &
-xrdb ~/.Xresources &
-~/.fehbg &
 ~/.config/polybar/launch.sh &
+~/.fehbg &
+xrdb ~/.Xresources &
 
-pgrep -x sxhkd > /dev/null || sxhkd &
 
 # Bspwm stuff
 bspc monitor -d I II III IV V VI VII
