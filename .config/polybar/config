@@ -43,6 +43,7 @@ offset-y = 10
 wm-restack = bspwm
 
 [bar/ws]
+monitor = ${env:MONITOR:}
 inherit = bar/base
 width = 14.5%
 
@@ -55,6 +56,7 @@ scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
 
 [bar/music]
+monitor = ${env:MONITOR:}
 inherit = bar/base
 enable-ipc = true
 width = 25%
@@ -68,6 +70,7 @@ offset-x = 37.5%
 modules-left = previous playpause next spotify
 
 [bar/tray]
+monitor = ${env:MONITOR:}
 inherit = bar/base
 width = 17.5%
 
@@ -75,7 +78,7 @@ offset-x = 81.85%
 
 modules-center = pulseaudio time 
 
-tray-position = left
+tray-position = right
 
 ;                      _       _           
 ;  _ __ ___   ___   __| |_   _| | ___  ___ 

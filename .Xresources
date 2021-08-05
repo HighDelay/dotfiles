@@ -39,10 +39,10 @@
 
 
 !! URxvt Appearance
-URxvt.font: xft:MesloLGS NF:size=10
-URxvt.boldFont:
-URxvt.italicFont:
-URxvt.boldItalicfont:
+URxvt.font: xft:MesloLGS NF:style=Regular:size=10
+URxvt.boldFont: xft:MesloLGS NF:style=Bold:size=10
+URxvt.italicFont: xft:MesloLGS NF:style=Italic:size=10
+URxvt.boldItalicfont: xft:MesloLGS NF:style=Bold Italic:size=10
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
 URxvt.geometry: 92x24
