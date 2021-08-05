@@ -43,7 +43,6 @@ offset-y = 10
 wm-restack = bspwm
 
 [bar/ws]
-monitor = ${env:MONITOR:}
 inherit = bar/base
 width = 14.5%
 
@@ -70,7 +69,6 @@ offset-x = 37.5%
 modules-left = previous playpause next spotify
 
 [bar/tray]
-monitor = ${env:MONITOR:}
 inherit = bar/base
 width = 17.5%
 
