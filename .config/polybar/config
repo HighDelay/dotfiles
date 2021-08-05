@@ -70,9 +70,9 @@ modules-left = previous playpause next spotify
 
 [bar/tray]
 inherit = bar/base
-width = 17.5%
+width = 20%
 
-offset-x = 81.85%
+offset-x = 79.30%
 
 modules-center = pulseaudio time 
 
