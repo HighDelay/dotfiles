@@ -14,6 +14,9 @@ super + @space
 super + Print
 	flameshot screen -c -p $HOME/Pictures
 
+super + shift + Print
+	flameshot full -c -p $HOME/Pictures 	
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
