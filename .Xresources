@@ -2,7 +2,7 @@
 
 ! special
 *.foreground:   #c5c8c6
-*.background:   #1d1f21
+*.background:   #0b0b0b
 *.cursorColor:  #c5c8c6
 
 ! black
@@ -38,6 +38,8 @@
 *.color15:      #c5c8c6
 
 
+
+
 !! URxvt Appearance
 URxvt.font: xft:MesloLGS NF:style=Regular:size=10
 URxvt.boldFont: xft:MesloLGS NF:style=Bold:size=10
@@ -52,6 +54,7 @@ URxvt.cursorUnderline: false
 URxvt.saveline: 2048
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
+URxvt.background: rgba:1111/1111/1111/dddd
 URxvt.depth: 32
 URxvt.iso14755: false
 
