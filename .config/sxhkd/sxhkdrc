@@ -12,7 +12,7 @@ super + @space
 
 # screenshot
 super + Print
-	gnome-screenshot
+	flameshot screen -c -p $HOME/Pictures
 
 # make sxhkd reload its configuration files:
 super + Escape
