@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-	rofi -show drun
+	rofi -modi drun -show drun
 
 # screenshot
 super + Print
