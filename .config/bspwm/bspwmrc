@@ -6,7 +6,7 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 fc-cache -f &
-picom -b &
+picom -b --experimental-backends &
 dunst &
 ~/.config/polybar/launch.sh &
 ~/.fehbg &
