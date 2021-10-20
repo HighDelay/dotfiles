@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-	rofi -modi drun -show drun
+	rofi -show drun -theme $HOME/.config/rofi/nord.rasi
 
 # screenshot
 super + Print

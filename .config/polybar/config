@@ -39,6 +39,7 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 override-redirect=false
 offset-y = 10
+bottom = true
 
 wm-restack = bspwm
 
