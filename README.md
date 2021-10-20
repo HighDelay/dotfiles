@@ -1,5 +1,5 @@
 # Dotfiles
-This is my personal linux config
+This is my personal linux configs
 
 ## Dependencies
 
