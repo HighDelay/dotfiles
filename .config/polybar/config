@@ -11,8 +11,8 @@
 
 [colors]
 
-background = ${xrdb:color0:#222}
-foreground = ${xrdb:color7:#222}
+background = ${xrdb:background:#222}
+foreground = ${xrdb:foreground:#222}
 highlight = ${xrdb:color15:#222}
 
 ;  _                    
@@ -24,7 +24,7 @@ highlight = ${xrdb:color15:#222}
 [bar/base]
 enable-ipc = true
 font-0=CozetteVector:pixelsize=9;2
-font-1=FontAwesome5Free:style=Solid:pixelsize=8:antialias=true;2
+font-1=MesloLGS NF:style=Solid:pixelsize=10:antialias=true;2
 font-2=IPAGothic:style=Regular:size=10:antialias=true;3
 
 padding = 2
@@ -39,13 +39,14 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 override-redirect=false
 offset-y = 10
-bottom = true
+bottom = false
 
 wm-restack = bspwm
 
 [bar/ws]
+monitor = ${env:MONITOR:}
 inherit = bar/base
-width = 14.5%
+width =14.5%
 
 
 offset-x = 10
@@ -55,21 +56,33 @@ modules-left = bspwm
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
 
+[bar/sysinfo]
+monitor = ${env:MONITOR:}
+inherit = bar/base
+width = 13.5%
+
+
+offset-x = 65.5% 
+line-size = 1 
+modules-center = temperature cpu filesystem
+
+
 [bar/music]
 monitor = ${env:MONITOR:}
 inherit = bar/base
 enable-ipc = true
 width = 25%
 
-offset-x = 37.5%
+offset-x = 15.77%
 
 ; Spotify (uses playerctl, spotify-status.py)
 ; modules-left = previous playpause next 
 ; modules-center = spotify
 ; Mpd
-modules-left = previous playpause next spotify
+modules-left = previous playpause next spotify 
 
 [bar/tray]
+monitor = ${env:MONITOR:}
 inherit = bar/base
 width = 20%
 
@@ -115,6 +128,59 @@ label-occupied-padding = 1
 
 label-empty = %name%
 label-empty-padding = 1
+
+;-----sysinfo modules-----
+
+[module/temperature]
+type = internal/temperature
+
+format = <ramp> <label>
+format-background = ${color.black}
+format-padding = 1
+
+label = %temperature%
+label-foreground = ${color.font}
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-font = 1
+ramp-foreground = ${color.red}
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = "  "
+format-prefix-foreground = ${color.red}
+format-foreground = ${color.font}
+format-background = ${color.black}
+label = "%{A1:terminal -e gtop &:}%percentage%% %{A}"
+
+[module/filesystem]
+type = internal/fs
+
+mount-0 = /
+interval = 30
+fixed-values = true
+
+format-mounted = <label-mounted>
+format-mounted-prefix = ""
+format-mounted-prefix-foreground = ${color.black}
+format-mounted-prefix-background = ${color.red}
+
+format-unmounted = <label-unmounted>
+format-unmounted-prefix = " "
+format-unmounted-prefix-foreground = ${color.black}
+format-unmounted-prefix-background = ${color.red}
+
+label-mounted = "%{A1:terminal -e ncdu &:} %free%%{A}"
+label-unmounted = " %mountpoint%: NA"
+label-mounted-foreground = ${color.black}
+
+label-mounted-background = ${color.red}
+label-unmounted-background = ${color.red}
+
+;-----Music/Audio Modules-----
 
 [module/mpd]
 type = internal/mpd
@@ -163,7 +229,7 @@ ramp-volume-2 = ""
 label-muted = "  muted"   
 label-muted-padding = 0
 
-;Spotify modules
+;-----Spotify modules-----
 
 [module/previous]
 type = custom/script
@@ -196,6 +262,7 @@ format-padding = 1
 tail = true
 interval = 1
 
+;------------------------------
 
 [settings]
 screenchange-reload = true

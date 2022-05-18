@@ -9,12 +9,16 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 # Multiple Monitor
 if type "xrandr"; then
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    MONITOR=$m polybar -rq music & polybar -rq tray & polybar -rq ws &
+    MONITOR=$m polybar -rq ws &
+    MONITOR=$m polybar -rq tray &
+    MONITOR=$m polybar -rq music &
+    MONITOR=$m polybar -rq sysinfo &
   done
 else
-	polybar -rq music &
-	polybar -rq tray &
 	polybar -rq ws &
+	polybar -rq tray &
+	polybar -rq music &
+        polybar -rq sysinfo &        
 
 	echo "Polybar launched..."
 fi
