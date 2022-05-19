@@ -8,9 +8,9 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 fc-cache -f &
 picom -b --experimental-backends &
 dunst &
-~/.config/polybar/launch.sh &
-~/.fehbg &
-xrdb ~/.Xresources &
+$HOME/.config/polybar/launch.sh &
+$HOME/.fehbg &
+xrdb "$HOME/.Xresources" &
 
 
 # bspwm stuff
