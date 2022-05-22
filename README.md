@@ -6,7 +6,7 @@ This is my personal linux configs
 * **WM:** bspwm
 * **Bar:** polybar
 * **Launcher:** rofi
-* **Compositor:** picom-ibhagwan-git
+* **Compositor:** picom-jonaburg-git
 * **Notification Daemon:** dunst
 * **Terminal:** urxvt, urxvt-perls (for kb shortcuts)
 * **Sysmon:** htop
