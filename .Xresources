@@ -1,24 +1,33 @@
-!! Colorscheme
+!! Colors
+urxvt*background:           #000000
+urxvt*foreground:           #666699
+urxvt*cursorColor:          #6699CC
+urxvt*colorBD:              #CCCCFF
 
-*.foreground:   #B5E8E0
-*.background:   #02131A
+!Visiblue
+urxvt*color0:               #333366
+urxvt*color8:               #333399
 
-*.color0: #1A1B26
-*.color1: #653945
-*.color2: #3C4349
-*.color3: #4C4C53
-*.color4: #695861
-*.color5: #88374A
-*.color6: #985965
-*.color7: #BCB4B9
-*.color8: #837D81
-*.color9: #653945
-*.color10: #3C4349
-*.color11: #4C4C53
-*.color12: #695861
-*.color13: #88374A
-*.color14: #985965
-*.color15: #BCB4B9
+urxvt*color1:               #6666CC
+urxvt*color9:               #9999FF
+
+urxvt*color2:               #0099CC
+urxvt*color10:              #00CCFF
+
+urxvt*color3:               #3366CC
+urxvt*color11:              #6699FF
+
+urxvt*color4:               #006699
+urxvt*color12:              #0099CC
+
+urxvt*color5:               #0066FF
+urxvt*color13:              #0099FF
+
+urxvt*color6:               #669999
+urxvt*color14:              #66CCCC
+
+urxvt*color7:               #99CCCC
+urxvt*color15:              #CCFFFF
 
 !! URxvt Appearance
 URxvt.font: xft:MesloLGS NF:style=Regular:size=10
@@ -34,7 +43,6 @@ URxvt.cursorUnderline: false
 URxvt.saveline: 2048
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
-!! URxvt.background: rgba:1111/1111/1111/dddd
 URxvt.depth: 32
 URxvt.iso14755: false
 
