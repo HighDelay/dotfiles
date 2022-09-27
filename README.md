@@ -12,6 +12,7 @@ This is my personal linux configs
 * **Sysmon:** htop
 * **Wallpaper:** feh
 * **Fonts:** cozette-ttf, ipa-fonts
+* **Shell:** zsh (ohmyzsh, zsh-autosuggestions, zsh-syntax-highlighting, zsh-completions, powerlevel10k)
 
 ### Screenshots
 ![1](/screenshots/1.png)
