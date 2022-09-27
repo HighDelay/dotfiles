@@ -1,7 +1,7 @@
 /*****----- Configuration -----*****/
 configuration {
 	modi:                       "drun,run,filebrowser";
-	font:				"MesloLGS NF 10";
+	font: 			    "Iosevka Nerd Font 10";
     show-icons:                 false;
     display-drun:               "";
     display-run:                "";

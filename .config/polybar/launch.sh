@@ -12,11 +12,13 @@ if type "xrandr"; then
     MONITOR=$m polybar -rq ws &
     MONITOR=$m polybar -rq tray &
     MONITOR=$m polybar -rq sysinfo &
-  done
+    MONITOR=$m polybar -rq window & 
+ done
 else
 	polybar -rq ws &
 	polybar -rq tray &
         polybar -rq sysinfo &        
+	polybar -rq window &
 
 	echo "Polybar launched..."
 fi
