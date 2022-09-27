@@ -5,13 +5,13 @@ This is my personal linux configs
 
 * **WM:** bspwm
 * **Bar:** polybar
-* **Launcher:** rofi
+* **Launcher - Powermenu:** rofi
 * **Compositor:** picom-jonaburg-git
 * **Notification Daemon:** dunst
 * **Terminal:** urxvt, urxvt-perls (for kb shortcuts)
 * **Sysmon:** htop
 * **Wallpaper:** feh
-* **Fonts:** Cozette, MesloLGS NF, IPAGothic
+* **Fonts:** cozette-ttf, ipa-fonts
 
 ### Screenshots
 ![1](/screenshots/1.png)
