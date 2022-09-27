@@ -2,6 +2,9 @@
 
 ## Del4y Config ##
 
+# Disable DPMS and prevent screen from blanking
+xset s off -dpms
+
 # Autostarting
 pgrep -x sxhkd > /dev/null || sxhkd &
 
