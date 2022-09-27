@@ -10,6 +10,10 @@ super + Return
 super + @space
 	rofi -show drun -theme $HOME/.config/rofi/config.rasi
 
+# powermenu
+alt + F4
+      $HOME/.config/rofi/powermenu/powermenu.sh
+
 # screenshot
 super + Print
 	flameshot screen -c -p $HOME/Pictures
