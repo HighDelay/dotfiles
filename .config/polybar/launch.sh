@@ -7,8 +7,8 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Multiple Monitor
-if type "xrandr"; then
-  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+if type "polybar"; then
+  for m in $(polybar --list-monitors | cut -d":" -f1); do
     MONITOR=$m polybar -rq ws &
     MONITOR=$m polybar -rq tray &
     MONITOR=$m polybar -rq sysinfo &
