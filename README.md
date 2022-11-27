@@ -1,6 +1,17 @@
 # Dotfiles
 This is my personal linux configs
 
+In order to install this, paste the following commands to terminal: 
+```
+git clone https://github.com/HighDelay/dotfiles/
+cd ~/dotfiles && cp -rv *. ~/ && rm -rf ~/.git ~/README.md ~/screenshots
+```
+To set wallpaper, use feh: 
+```
+feh --bg-fill /path/to/your/wallpaper
+```
+**Make sure that you have installed all of the required dependencies**
+
 ## Dependencies
 
 * **WM:** bspwm
