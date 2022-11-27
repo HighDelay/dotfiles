@@ -4,7 +4,7 @@ This is my personal linux configs
 In order to install this, paste the following commands to terminal: 
 ```
 git clone https://github.com/HighDelay/dotfiles/
-cd ~/dotfiles && cp -rv *. ~/ && rm -rf ~/.git ~/README.md ~/screenshots
+cd ~/dotfiles && cp -rv .* ~/ && rm -rf ~/.git ~/README.md ~/screenshots
 ```
 To set wallpaper, use feh: 
 ```
