@@ -23,6 +23,7 @@ feh --bg-fill /path/to/your/wallpaper
 * **Wallpaper:** feh
 * **Fonts:** cozette-ttf, ipa-fonts
 * **Shell:** zsh (ohmyzsh, zsh-autosuggestions, zsh-syntax-highlighting, zsh-completions, powerlevel10k)
+* **Lockscreen:** betterlockscreen
 
 ### Screenshots
 ![1](/screenshots/1.png)
