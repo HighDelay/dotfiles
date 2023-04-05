@@ -1,48 +1,57 @@
 !! Colors
-urxvt*background:           #000000
-urxvt*foreground:           #666699
-urxvt*cursorColor:          #6699CC
-urxvt*colorBD:              #CCCCFF
 
-!Visiblue
-urxvt*color0:               #333366
-urxvt*color8:               #333399
+! special
+URxvt.background: [85]#EFF1F5
+URxvt.foreground: #4C4F69
+URxvt.cursorColor: #DC8A78
 
-urxvt*color1:               #6666CC
-urxvt*color9:               #9999FF
+! black
+URxvt.color0: #5C5F77
+URxvt.color8: #6C6F85
 
-urxvt*color2:               #0099CC
-urxvt*color10:              #00CCFF
+! red
+URxvt.color1: #D20F39
+URxvt.color9: #D20F39
 
-urxvt*color3:               #3366CC
-urxvt*color11:              #6699FF
+! green
+URxvt.color2: #40A02B
+URxvt.color10: #40A02B
 
-urxvt*color4:               #006699
-urxvt*color12:              #0099CC
+! yellow
+URxvt.color3: #DF8E1D
+URxvt.color11: #DF8E1D
 
-urxvt*color5:               #0066FF
-urxvt*color13:              #0099FF
+! blue
+URxvt.color4: #1E66F5
+URxvt.color12: #1E66F5
 
-urxvt*color6:               #669999
-urxvt*color14:              #66CCCC
+! magenta
+URxvt.color5: #EA76CB
+URxvt.color13: #EA76CB
 
-urxvt*color7:               #99CCCC
-urxvt*color15:              #CCFFFF
+! cyan
+URxvt.color6: #179299
+URxvt.color14: #179299
+
+! white
+URxvt.color7: #ACB0BE
+URxvt.color15: #BCC0CC
 
 !! URxvt Appearance
-URxvt.font: xft:MesloLGS NF:style=Regular:size=10
-URxvt.boldFont: xft:MesloLGS NF:style=Bold:size=10
-URxvt.italicFont: xft:MesloLGS NF:style=Italic:size=10
-URxvt.boldItalicfont: xft:MesloLGS NF:style=Bold Italic:size=10
+URxvt.font: xft:MesloLGS NF:style=Regular:size=11
+URxvt.boldFont: xft:MesloLGS NF:style=Bold:size=11
+URxvt.italicFont: xft:MesloLGS NF:style=Italic:size=11
+URxvt.boldItalicfont: xft:MesloLGS NF:style=Bold Italic:size=11
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
-URxvt.geometry: 92x24
+URxvt.geometry: 92x92
 URxvt.internalBorder: 24
 URxvt.cursorBlink: true
 URxvt.cursorUnderline: false
 URxvt.saveline: 2048
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
 URxvt.depth: 32
 URxvt.iso14755: false
 

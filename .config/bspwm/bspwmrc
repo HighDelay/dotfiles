@@ -26,7 +26,7 @@ workspaces() {
 }
 workspaces
 
-bspc config border_width         3
+bspc config border_width         2
 bspc config window_gap          10
 
 bspc config split_ratio          0.50
@@ -35,6 +35,6 @@ bspc config gapless_monocle      true
 bspc config focus_follows_pointer true
 
 # Bspwm border color
-bspc config focused_border_color "#6666CC"
-bspc config normal_border_color "#333366"
-bspc config active_border_color "#444b6a"
+bspc config focused_border_color "#BB9891"
+bspc config normal_border_color "#D8C4C0"
+bspc config active_border_color "#BB9891"
