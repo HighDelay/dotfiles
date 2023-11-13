@@ -16,10 +16,7 @@ alt + F4
 
 # screenshot
 super + Print
-	flameshot screen -c -p $HOME/Pictures
-
-super + shift + Print
-	flameshot full -c -p $HOME/Pictures 	
+	scrot
 
 # make sxhkd reload its configuration files:
 super + Escape
