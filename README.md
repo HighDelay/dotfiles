@@ -17,7 +17,7 @@ feh --bg-fill /path/to/your/wallpaper
 * **Bar:** polybar
 * **Launcher - Powermenu:** rofi
 * **Screenshot**: scrot (Win + Print)
-* **Compositor:** picom-allusive
+* **Compositor:** picom-git
 * **Notification Daemon:** dunst
 * **Terminal:** urxvt, urxvt-perls (for kb shortcuts)
 * **Sysmon:** htop
