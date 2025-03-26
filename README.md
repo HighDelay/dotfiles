@@ -26,7 +26,7 @@ feh --bg-fill /path/to/your/wallpaper
 * **Shell:** zsh (ohmyzsh, zsh-autosuggestions, zsh-syntax-highlighting, zsh-completions, powerlevel10k)
 * **Lockscreen:** betterlockscreen
 ```
-yay -Sy bspwm polybar rofi scrot sxhkd picom dunst rxvt-unicode urxvt-perls htop feh cozette-ttf ipa-fonts zsh betterlockscreen
+yay -Sy bspwm polybar rofi scrot sxhkd picom dunst rxvt-unicode urxvt-perls htop feh cozette-ttf ipa-fonts noto-fonts zsh betterlockscreen
 ```
 ### Screenshots
 ![1](/screenshots/1.png)
