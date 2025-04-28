@@ -17,7 +17,7 @@ feh --bg-fill /path/to/your/wallpaper
 * **Bar:** polybar
 * **Launcher - Powermenu:** rofi
 * **Screenshot**: scrot (Win + Print)
-* **Compositor:** picom
+* **Compositor:** picom-pijulius-next-git
 * **Notification Daemon:** dunst
 * **Terminal:** urxvt, urxvt-perls (for kb shortcuts)
 * **Sysmon:** htop
@@ -26,7 +26,7 @@ feh --bg-fill /path/to/your/wallpaper
 * **Shell:** zsh (ohmyzsh, zsh-autosuggestions, zsh-syntax-highlighting, zsh-completions, powerlevel10k)
 * **Lockscreen:** betterlockscreen
 ```
-yay -Sy bspwm polybar rofi scrot sxhkd picom dunst rxvt-unicode urxvt-perls htop feh cozette-ttf ipa-fonts noto-fonts zsh betterlockscreen
+yay -Sy bspwm polybar rofi scrot sxhkd picom-pijulius-next-git dunst rxvt-unicode urxvt-perls htop feh cozette-ttf ipa-fonts noto-fonts zsh betterlockscreen
 ```
 ### Screenshots
 ![1](/screenshots/1.png)
