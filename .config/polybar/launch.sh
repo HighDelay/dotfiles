@@ -17,7 +17,7 @@ if type "polybar"; then
 else
 	polybar -rq ws &
 	polybar -rq tray &
-        polybar -rq sysinfo &        
+  polybar -rq sysinfo &        
 	polybar -rq window &
 
 	echo "Polybar launched..."
