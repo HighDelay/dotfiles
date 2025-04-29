@@ -22,11 +22,11 @@ feh --bg-fill /path/to/your/wallpaper
 * **Terminal:** urxvt, urxvt-perls (for kb shortcuts)
 * **Sysmon:** htop
 * **Wallpaper:** feh
-* **Fonts:** cozette-ttf, ipa-fonts
+* **Fonts:** cozette-otb, ipa-fonts
 * **Shell:** zsh (ohmyzsh, zsh-autosuggestions, zsh-syntax-highlighting, zsh-completions, powerlevel10k)
 * **Lockscreen:** betterlockscreen
 ```
-yay -Sy bspwm polybar rofi scrot sxhkd picom-pijulius-next-git dunst rxvt-unicode urxvt-perls htop feh cozette-ttf ipa-fonts noto-fonts zsh betterlockscreen
+yay -Sy bspwm polybar rofi scrot sxhkd picom-pijulius-next-git dunst rxvt-unicode urxvt-perls htop feh cozette-otb ipa-fonts noto-fonts zsh betterlockscreen
 ```
 ### Screenshots
 ![1](/screenshots/1.png)
