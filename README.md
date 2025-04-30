@@ -3,7 +3,7 @@ This is my personal linux configs
 
 In order to install this, paste the following commands to terminal: 
 ```
-git clone https://github.com/HighDelay/dotfiles/ && cd dotfiles && cp -rv .* ~/ ; rm -rf ~/.git ~/README.md ~/screenshots
+git clone https://github.com/HighDelay/dotfiles/ && cd dotfiles && cp -rv .* ~/ ; rm -rf ~/.git
 ```
 To set wallpaper, use feh: 
 ```
