@@ -12,12 +12,14 @@ if type "polybar"; then
     MONITOR=$m polybar -rq ws &
     MONITOR=$m polybar -rq tray &
     MONITOR=$m polybar -rq sysinfo &
+    MONITOR=$m polybar -rq network &
     MONITOR=$m polybar -rq window & 
  done
 else
 	polybar -rq ws &
 	polybar -rq tray &
-  polybar -rq sysinfo &        
+	polybar -rq sysinfo &
+	polybar -rq network &        
 	polybar -rq window &
 
 	echo "Polybar launched..."
