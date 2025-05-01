@@ -25,6 +25,12 @@ feh --bg-fill /path/to/your/wallpaper
 * **Fonts:** cozette-otb, ipa-fonts
 * **Shell:** zsh (ohmyzsh, zsh-autosuggestions, zsh-syntax-highlighting, zsh-completions, powerlevel10k)
 * **Lockscreen:** betterlockscreen
+
+## GTK themes, icons, and cursors to match the config
+* **Icon:** [Papirus grey](https://www.pling.com/p/1166289/)
+* **Theme:** [Graphite dark gtk](https://www.gnome-look.org/p/1598493)
+* **Cursor:** [Future dark cursors](https://www.gnome-look.org/p/1457884)
+
 ```
 yay -Sy bspwm polybar rofi scrot sxhkd picom-pijulius-next-git dunst rxvt-unicode urxvt-perls htop feh cozette-otb ipa-fonts noto-fonts zsh betterlockscreen
 ```
