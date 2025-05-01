@@ -38,13 +38,13 @@ URxvt.color7: #ACB0BE
 URxvt.color15: #BCC0CC
 
 !! URxvt Appearance
-URxvt.font: xft:MesloLGS NF:style=Regular:size=11
-URxvt.boldFont: xft:MesloLGS NF:style=Bold:size=11
-URxvt.italicFont: xft:MesloLGS NF:style=Italic:size=11
-URxvt.boldItalicfont: xft:MesloLGS NF:style=Bold Italic:size=11
+URxvt.font: xft:MesloLGS NF:style=Regular:size=12
+URxvt.boldFont: xft:MesloLGS NF:style=Bold:size=12
+URxvt.italicFont: xft:MesloLGS NF:style=Italic:size=12
+URxvt.boldItalicfont: xft:MesloLGS NF:style=Bold Italic:size=12
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
-URxvt.geometry: 150x50
+URxvt.geometry: 150x100
 URxvt.internalBorder: 24
 URxvt.cursorBlink: true
 URxvt.cursorUnderline: false

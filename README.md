@@ -21,6 +21,7 @@ feh --bg-fill /path/to/your/wallpaper
 * **Notification Daemon:** dunst
 * **Terminal:** urxvt, urxvt-perls (for kb shortcuts)
 * **Sysmon:** htop
+* **Sysfetch:** fastfetch
 * **Wallpaper:** feh
 * **Fonts:** cozette-otb, ipa-fonts
 * **Shell:** zsh (ohmyzsh, zsh-autosuggestions, zsh-syntax-highlighting, zsh-completions, powerlevel10k)
@@ -32,7 +33,7 @@ feh --bg-fill /path/to/your/wallpaper
 * **Cursor:** [Future dark cursors](https://www.gnome-look.org/p/1457884)
 
 ```
-yay -Sy bspwm polybar rofi scrot sxhkd picom-pijulius-next-git dunst rxvt-unicode urxvt-perls htop feh cozette-otb ipa-fonts noto-fonts zsh betterlockscreen
+yay -Sy bspwm polybar rofi scrot sxhkd picom-pijulius-next-git dunst rxvt-unicode urxvt-perls htop feh cozette-otb ipa-fonts noto-fonts zsh betterlockscreen fastfetch
 ```
 ### Screenshots
 ![1](/screenshots/1.png)
