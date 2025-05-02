@@ -33,7 +33,7 @@ feh --bg-fill /path/to/your/wallpaper
 * **Cursor:** [Future dark cursors](https://www.gnome-look.org/p/1457884)
 
 ```
-yay -Sy bspwm polybar rofi scrot sxhkd picom-pijulius-next-git dunst rxvt-unicode urxvt-perls htop feh cozette-otb ipa-fonts noto-fonts zsh betterlockscreen fastfetch
+yay -Sy bspwm polybar rofi scrot sxhkd picom-pijulius-next-git dunst rxvt-unicode urxvt-perls htop feh cozette-otb ipa-fonts noto-fonts zsh betterlockscreen fastfetch thunar tumbler ffmpegthumbnailer gvfs lxappearance-gtk3
 ```
 ### Screenshots
 ![1](/screenshots/1.png)
