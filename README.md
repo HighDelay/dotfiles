@@ -18,7 +18,7 @@ feh --bg-fill /path/to/your/wallpaper
 * **Shortcuts:** sxhkd (check .config/sxhkd/sxhkdrc for kb shortcuts, Win + enter to open the terminal)
 * **Launcher - Powermenu:** rofi
 * **Screenshot**: scrot (Win + Print)
-* **Compositor:** picom-pijulius-next-git
+* **Compositor:** picom
 * **Notification Daemon:** dunst
 * **Terminal:** urxvt, urxvt-perls (for kb shortcuts)
 * **Sysmon:** htop
@@ -29,7 +29,7 @@ feh --bg-fill /path/to/your/wallpaper
 * **Lockscreen:** betterlockscreen
 
 ```
-yay -Sy bspwm polybar rofi scrot sxhkd picom-pijulius-next-git dunst rxvt-unicode urxvt-perls htop feh cozette-otb ipa-fonts noto-fonts zsh betterlockscreen fastfetch thunar tumbler ffmpegthumbnailer gvfs lxappearance-gtk3 xorg-server xorg-xinit xorg-xsetroot
+yay -Sy bspwm polybar rofi scrot sxhkd picom dunst rxvt-unicode urxvt-perls htop feh cozette-otb ipa-fonts noto-fonts zsh betterlockscreen fastfetch thunar tumbler ffmpegthumbnailer gvfs lxappearance-gtk3 xorg-server xorg-xinit xorg-xsetroot
 ```
 
 ## GTK themes, icons, and cursors to match the config
