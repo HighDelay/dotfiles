@@ -14,9 +14,13 @@ super + @space
 alt + F4
       $HOME/.config/rofi/powermenu/powermenu.sh
 
-# screenshot
-super + Print
-	$HOME/.config/bspwm/scripts/screenshot.sh
+# screenshot utility (Default: Save & Copy)
+Print
+    ~/.config/bspwm/scripts/screenshot.sh
+
+# Screenshot utility (Interactive: Show action menu)
+ctrl + Print
+    ~/.config/bspwm/scripts/screenshot.sh --interactive
 
 # open thunar
 super + e
