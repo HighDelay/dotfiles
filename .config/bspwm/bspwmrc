@@ -3,7 +3,7 @@
 ## Del4y Config ##
 
 # Disable DPMS and prevent screen from blanking
-xset s off -dpms &
+# xset s off -dpms &
 
 # Fix default X cursor
 xsetroot -cursor_name left_ptr
