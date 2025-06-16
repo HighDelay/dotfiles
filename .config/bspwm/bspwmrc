@@ -2,11 +2,14 @@
 
 ## Del4y Config ##
 
+# Starting polkit-gnome to allow mounting in Thunar
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
 # Disable DPMS and prevent screen from blanking
 # xset s off -dpms &
 
 # Fix default X cursor
-xsetroot -cursor_name left_ptr
+xsetroot -cursor_name left_ptr &
 
 # Autostarting
 pgrep -x sxhkd > /dev/null || sxhkd &
