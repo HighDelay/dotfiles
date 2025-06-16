@@ -14,13 +14,20 @@ super + @space
 alt + F4
       $HOME/.config/rofi/powermenu/powermenu.sh
 
-# screenshot utility (Default: Save & Copy)
-Print
-    ~/.config/bspwm/scripts/screenshot.sh
+# Screenshot
 
-# Screenshot utility (Interactive: Show action menu)
+# Capture fullscreen, save to file, and copy to clipboard
+super + Print
+    ~/.config/bspwm/scripts/screenshot.sh full
+
+# Capture a selection, save to file, and copy to clipboard
+ctrl + shift + s
+    ~/.config/bspwm/scripts/screenshot.sh select
+
+# Capture the active window, save to file, and copy to clipboard
 ctrl + Print
-    ~/.config/bspwm/scripts/screenshot.sh --interactive
+    ~/.config/bspwm/scripts/screenshot.sh active
+
 
 # open thunar
 super + e
