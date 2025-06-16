@@ -17,7 +17,7 @@ alt + F4
 # Screenshot
 
 # Capture fullscreen, save to file, and copy to clipboard
-super + Print
+Print
     ~/.config/bspwm/scripts/screenshot.sh full
 
 # Capture a selection, save to file, and copy to clipboard
