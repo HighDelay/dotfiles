@@ -17,7 +17,7 @@ feh --bg-fill /path/to/your/wallpaper
 * **Bar:** polybar
 * **Shortcuts:** sxhkd (check .config/sxhkd/sxhkdrc for kb shortcuts, Win + enter to open the terminal)
 * **Launcher - Powermenu:** rofi
-* **Screenshot**: scrot (Win + Print)
+* **Screenshot**: scrot (Print & ctrl + Print)
 * **Compositor:** picom
 * **Notification Daemon:** dunst
 * **Terminal:** urxvt, urxvt-perls (for kb shortcuts)
