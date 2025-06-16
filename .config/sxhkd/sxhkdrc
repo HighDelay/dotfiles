@@ -16,7 +16,7 @@ alt + F4
 
 # screenshot
 super + Print
-	scrot
+	$HOME/.config/bspwm/scripts/screenshot.sh
 
 # open thunar
 super + e

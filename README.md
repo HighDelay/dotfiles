@@ -29,7 +29,7 @@ feh --bg-fill /path/to/your/wallpaper
 * **Lockscreen:** betterlockscreen
 
 ```
-yay -Sy bspwm polybar rofi scrot sxhkd picom dunst rxvt-unicode urxvt-perls htop feh cozette-otb ipa-fonts noto-fonts zsh betterlockscreen fastfetch thunar tumbler ffmpegthumbnailer gvfs lxappearance-gtk3 xorg-server xorg-xinit xorg-xsetroot
+yay -Sy bspwm polybar rofi scrot sxhkd picom dunst rxvt-unicode urxvt-perls htop feh cozette-otb ipa-fonts noto-fonts zsh betterlockscreen fastfetch thunar thunar-volman thunar-archive-plugin polkit dbus gnome-keyring tumbler ffmpegthumbnailer gvfs lxappearance-gtk3 xorg-server xorg-xinit xorg-xsetroot xclip
 ```
 
 ## GTK themes, icons, and cursors to match the config
