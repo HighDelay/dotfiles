@@ -21,7 +21,7 @@ Print
     ~/.config/bspwm/scripts/screenshot.sh full
 
 # Capture a selection, save to file, and copy to clipboard
-ctrl + shift + s
+super + shift + s
     ~/.config/bspwm/scripts/screenshot.sh select
 
 # Capture the active window, save to file, and copy to clipboard
