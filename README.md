@@ -20,7 +20,7 @@ feh --bg-fill /path/to/your/wallpaper
 * **Screenshot**: scrot (Win/Super+shift+S to capture on selection, PrintScr to capture the entire screen, Ctrl+PrintScr to capture active windows)
 * **Compositor:** picom
 * **Notification Daemon:** dunst
-* **Terminal:** urxvt, urxvt-perls (for kb shortcuts)
+* **Terminal:** kitty (main), urxvt, urxvt-perls (for kb shortcuts)
 * **Sysmon:** htop
 * **Sysfetch:** fastfetch
 * **Wallpaper:** feh
@@ -29,7 +29,7 @@ feh --bg-fill /path/to/your/wallpaper
 * **Lockscreen:** betterlockscreen
 
 ```
-yay -Sy bspwm polybar rofi scrot sxhkd picom dunst rxvt-unicode urxvt-perls htop feh cozette-otb ipa-fonts noto-fonts zsh betterlockscreen fastfetch thunar thunar-volman thunar-archive-plugin polkit polkit-gnome dbus gnome-keyring tumbler ffmpegthumbnailer gvfs lxappearance-gtk3 xorg-server xorg-xinit xorg-xsetroot xclip
+yay -Sy bspwm polybar rofi scrot sxhkd picom dunst rxvt-unicode urxvt-perls htop feh cozette-otb ipa-fonts noto-fonts zsh betterlockscreen fastfetch thunar thunar-volman thunar-archive-plugin polkit polkit-gnome dbus gnome-keyring tumbler ffmpegthumbnailer gvfs lxappearance-gtk3 xorg-server xorg-xinit xorg-xsetroot xclip cmus mpd rmpc kitty
 ```
 
 ## GTK themes, icons, and cursors to match the config
