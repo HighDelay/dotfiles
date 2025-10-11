@@ -9,6 +9,18 @@ To set wallpaper, use feh:
 ```
 feh --bg-fill /path/to/your/wallpaper
 ```
+If you use xorg-xinit, to start the session:
+```
+startx
+```
+Autostart X when logging in from TTY:
+```
+##.zprofile file
+if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
+  exec startx
+fi
+```
+
 **Make sure that you have installed all of the required dependencies**
 
 ## Dependencies
