@@ -45,10 +45,11 @@ yay -Sy bspwm polybar rofi scrot sxhkd picom dunst rxvt-unicode urxvt-perls htop
 ```
 
 ## GTK themes, icons, and cursors to match the config
-* **Icon:** [Papirus grey](https://www.pling.com/p/1166289/)
-* **Theme:** [Graphite dark gtk](https://www.gnome-look.org/p/1598493)
-* **Cursor:** [Future dark cursors](https://www.gnome-look.org/p/1457884)
+* **Icon:** [Papirus Cyan](https://www.pling.com/p/1166289/)
+* **Theme:** [Graphite Dark Gtk](https://www.gnome-look.org/p/1598493)
+* **Cursor:** [Future Dark Cursors](https://www.gnome-look.org/p/1457884)
 
 ### Screenshots
 ![1](/screenshots/1.png)
 ![2](/screenshots/2.png)
+![3](/screenshots/3.png)

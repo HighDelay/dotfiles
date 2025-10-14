@@ -9,18 +9,10 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 # Multiple Monitor
 if type "polybar"; then
   for m in $(polybar --list-monitors | cut -d":" -f1); do
-    MONITOR=$m polybar -rq ws &
-    MONITOR=$m polybar -rq tray &
-    MONITOR=$m polybar -rq sysinfo &
-    MONITOR=$m polybar -rq network &
-    MONITOR=$m polybar -rq window & 
+    MONITOR=$m polybar -rq base &
  done
 else
-	polybar -rq ws &
-	polybar -rq tray &
-	polybar -rq sysinfo &
-	polybar -rq network &        
-	polybar -rq window &
+	polybar -rq base &
 
 	echo "Polybar launched..."
 fi

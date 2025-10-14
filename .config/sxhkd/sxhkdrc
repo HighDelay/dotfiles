@@ -18,15 +18,15 @@ alt + F4
 
 # Capture fullscreen, save to file, and copy to clipboard
 Print
-    ~/.config/bspwm/scripts/screenshot.sh full
+    $HOME/.config/bspwm/scripts/screenshot.sh full
 
 # Capture a selection, save to file, and copy to clipboard
 super + shift + s
-    ~/.config/bspwm/scripts/screenshot.sh select
+    $HOME/.config/bspwm/scripts/screenshot.sh select
 
 # Capture the active window, save to file, and copy to clipboard
 ctrl + Print
-    ~/.config/bspwm/scripts/screenshot.sh active
+    $HOME/.config/bspwm/scripts/screenshot.sh active
 
 
 # open thunar
