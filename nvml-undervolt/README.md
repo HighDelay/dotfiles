@@ -1,9 +1,9 @@
 # Undervolting Nvidia GPUs
 
-Undervolting Nvidia GPUs.
-Credit: [nvml-scripts](https://github.com/jacklul/nvml-scripts)
-The config has been modified for my GPU. 
-Please, do your own research for your GPU and do not use mine.
+Undervolting Nvidia GPUs.<br>
+Credit: [nvml-scripts](https://github.com/jacklul/nvml-scripts)<br>
+The config has been modified for my GPU. <br>
+Please, do your own research for your GPU and do not use mine.<br>
 
 **Install the script:**
 
