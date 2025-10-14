@@ -6,17 +6,19 @@ The config has been modified for my GPU.
 Please, do your own research for your GPU and do not use mine.
 
 **Install the script:**
+
 Dependency: `yay -Sy python-nvidia-ml-py`
 ```
 su -c "cp -rv nvml-undervolt.py /usr/local/sbin/nvml-undervolt && chmod a+x /usr/local/sbin/nvml-undervolt && cp -rv nvml-undervolt.service /etc/systemd/system/nvml-undervolt.service && chmod 664 /etc/systemd/system/nvml-undervolt.service && systemctl daemon-reload && systemctl enable --now nvml-undervolt.service"
 ```
 
 **How to undervolt (chaning the nvml-undervolt.service)**
-[base](/nvml-undervolt/base.png)
---core-offset 160 (See the img above "+160 offset" for 1960Mhz at 925mV)
---memory-offset 1400 (This adds 700Mhz to VRAM Clock)
---target-clock 1960 (The clock at which you want to undervolt - in my case, 1960)
---transition-clock 1890 (target clock - core offset = transition clock)
+
+![base](/nvml-undervolt/base.png)
+* **--core-offset 160** (See the img above "+160 offset" for 1960Mhz at 925mV)
+* **--memory-offset 1400** (This adds 700Mhz to VRAM Clock)
+* **--target-clock 1960** (The clock at which you want to undervolt - in my case, 1960)
+* **--transition-clock 1890** (target clock - core offset = transition clock)
 
 # nvml-undervolt
 
