@@ -5,7 +5,7 @@ After=multi-user.target
 
 [Service]
 Environment=PYTHONUNBUFFERED=1
-ExecStart=/usr/local/sbin/nvml-undervolt --core-offset 160 --memory-offset 1400 --target-clock 1960
+ExecStart=/usr/local/sbin/nvml-undervolt --core-offset 160 --memory-offset 1400 --target-clock 1960 --transition-clock 300
 Restart=on-failure
 RestartSec=5
 ProtectSystem=strict
