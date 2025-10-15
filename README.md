@@ -21,7 +21,7 @@ if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
 fi
 ```
 
-**Make sure that you have installed all of the required dependencies**
+**Make sure that you have installed all the required dependencies**
 
 ## Dependencies
 
