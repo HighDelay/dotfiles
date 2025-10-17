@@ -1,8 +1,8 @@
 !! Colors
 
 ! special
-URxvt.background: [80]#EFF1F5
-URxvt.foreground: #4C4F69
+URxvt.background: [80]#112436
+URxvt.foreground: #EAF2F9
 URxvt.cursorColor: #DC8A78
 
 ! black
