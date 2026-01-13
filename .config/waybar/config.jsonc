@@ -1,0 +1,139 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "margin-top": 10,
+    "margin-left": 10,
+    "margin-right": 10,
+    "spacing": 4,
+    "modules-left": [
+        "custom/launcher",
+        "custom/separator",
+        "hyprland/workspaces",
+        "custom/separator",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "network"
+    ],
+    "modules-right": [
+        "temperature",
+        "cpu",
+        "disk",
+        "battery",
+        "custom/separator",
+        "pulseaudio",
+        "clock",
+        "tray",
+        "custom/separator",
+        "custom/powermenu"
+    ],
+    // Separator module
+    "custom/separator": {
+        "format": "|",
+        "interval": "once",
+        "tooltip": false
+    },
+    // Modules configuration
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "一",
+            "2": "二",
+            "3": "三",
+            "4": "四",
+            "5": "五",
+            "6": "六",
+            "7": "七",
+            "urgent": "*",
+            "focused": "#",
+            "default": ""
+        }
+    },
+    "hyprland/window": {
+        "format": "{title}",
+        "max-length": 44,
+        "rewrite": {
+            "(.*) - Kitty": "$1"
+        }
+    },
+    "custom/launcher": {
+        "format": "♥",
+        "on-click": "rofi -show drun -theme $HOME/.config/rofi/config.rasi"
+    },
+    "network": {
+        "format-wifi": "直 {essid} | {ipaddr} | {bandwidthTotalBytes}",
+        "format-ethernet": " {ifname} | {ipaddr} | {bandwidthTotalBytes}",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "temperature": {
+        "thermal-zone": 1,
+        "critical-threshold": 80,
+        "format": "{icon} {temperatureC}°C",
+        "format-icons": [
+            "",
+            "",
+            ""
+        ]
+    },
+    "cpu": {
+        "format": "󰔟 {usage}%",
+        "tooltip": false
+    },
+    "disk": {
+        "interval": 30,
+        "format": " {free}",
+        "path": "/"
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% 󰁹",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": [
+            "󰁺",
+            "󰁼",
+            "󰁾",
+            "󰂀",
+            "󰁹"
+        ]
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-bluetooth-muted": " {icon}",
+        "format-muted": "  muted",
+        "format-icons": {
+            "headphone": "",
+            "phone": "",
+            "portable": "",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "on-click": "pavucontrol"
+    },
+    "clock": {
+        "format": "{:%d %b, %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "custom/powermenu": {
+        "format": "⏻",
+        "on-click": "$HOME/.config/rofi/powermenu/powermenu.sh"
+    }
+}

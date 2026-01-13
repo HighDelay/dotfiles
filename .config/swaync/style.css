@@ -1,0 +1,149 @@
+* {
+    font-family: "CozetteVector", "Cozette", monospace;
+    font-size: 9pt;
+}
+
+/* Prevent hover state from overriding background */
+.notification-row:focus,
+.notification-row:hover {
+    background: transparent;
+}
+
+.notification:hover {
+    background: rgba(17, 36, 54, 0.85);
+}
+
+.notification-row {
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+.notification {
+    background: rgba(17, 36, 54, 0.75);
+    border-radius: 10px;
+    border: 2px solid #71bbd4;
+    margin: 4px 12px;
+    padding: 0;
+    box-shadow: none;
+}
+
+.notification-content {
+    background: transparent;
+    padding: 12px;
+    border-radius: 10px;
+    color: #eaf2f9;
+}
+
+.summary {
+    font-weight: bold;
+    color: #eaf2f9;
+}
+
+.body {
+    color: #eaf2f9;
+}
+
+.close-button {
+    background: #71bbd4;
+    color: #112436;
+    text-shadow: none;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+    min-width: 20px;
+    min-height: 20px;
+    margin: 8px;
+}
+
+.close-button:hover {
+    background: #91dbf4;
+}
+
+.notification-default-action,
+.notification-action {
+    padding: 6px 12px;
+    margin: 4px;
+    box-shadow: none;
+    background: rgba(113, 187, 212, 0.2);
+    border: 1px solid #71bbd4;
+    border-radius: 8px;
+    color: #eaf2f9;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+    background: #71bbd4;
+    color: #112436;
+}
+
+/* Control Center */
+.control-center {
+    background: rgba(17, 36, 54, 0.85);
+    border: 2px solid #71bbd4;
+    border-radius: 10px;
+}
+
+.control-center-list {
+    background: transparent;
+}
+
+.control-center-list-placeholder {
+    opacity: 0.5;
+}
+
+.floating-notifications {
+    background: transparent;
+}
+
+.blank-window {
+    background: transparent;
+}
+
+.widget-title {
+    color: #eaf2f9;
+    background: transparent;
+    padding: 8px 12px;
+    margin: 8px;
+    font-size: 1.2rem;
+    border-radius: 0;
+}
+
+.widget-title>button {
+    font-size: 0.9rem;
+    color: #112436;
+    text-shadow: none;
+    background: #71bbd4;
+    border: none;
+    box-shadow: none;
+    border-radius: 8px;
+    padding: 4px 10px;
+}
+
+.widget-title>button:hover {
+    background: #91dbf4;
+}
+
+.widget-dnd {
+    background: transparent;
+    padding: 8px 12px;
+    margin: 4px 8px;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #eaf2f9;
+}
+
+.widget-dnd>switch {
+    border-radius: 12px;
+    background: #64727D;
+}
+
+.widget-dnd>switch:checked {
+    background: #71bbd4;
+}
+
+.widget-dnd>switch slider {
+    background: #eaf2f9;
+    border-radius: 10px;
+}

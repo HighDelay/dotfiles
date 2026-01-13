@@ -60,7 +60,7 @@ run_cmd() {
 			amixer set Master mute
 			systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
-			bspc quit
+			hyprctl dispatch exit
 		fi
 	else
 		exit 0
@@ -77,10 +77,8 @@ case ${chosen} in
 		run_cmd --reboot
         ;;
     $lock)
-		if [[ -x '/usr/bin/betterlockscreen' ]]; then
-			betterlockscreen -l
-		elif [[ -x '/usr/bin/i3lock' ]]; then
-			i3lock
+		if [[ -x '/usr/bin/hyprlock' ]]; then
+			hyprlock
 		fi
         ;;
     $suspend)

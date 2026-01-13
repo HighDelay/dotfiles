@@ -1,0 +1,140 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Cozette", "IPAGothic", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(17, 36, 54, 0.58);
+    color: #EAF2F9;
+    transition-property: background-color;
+    transition-duration: .5s;
+    border-radius: 8px;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    padding-top: 2px;
+    background-color: transparent;
+    color: #EAF2F9;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: inherit;
+    border-bottom: 3px solid #EAF2F9;
+}
+
+#workspaces button.active {
+    background-color: transparent;
+    color: #71BBD4;
+    border-bottom: 3px solid #71BBD4;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#mode {
+    background-color: #64727D;
+    border-bottom: 3px solid #EAF2F9;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#mpd,
+#custom-launcher,
+#custom-powermenu,
+#custom-separator,
+#window {
+    padding: 0 10px;
+    color: #EAF2F9;
+}
+
+#window {
+    font-weight: bold;
+}
+
+#custom-separator {
+    color: #EAF2F9;
+    padding: 0 4px;
+}
+
+#custom-launcher {
+    color: #EAF2F9;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+#custom-powermenu {
+    color: #EAF2F9;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: #EAF2F9;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#network.disconnected {
+    background-color: #f53c3c;
+}
+
+#temperature.critical {
+    background-color: #eb4d4b;
+}
+
+#tray {
+    background-color: transparent;
+}
+
+#tray>.passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray>.needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
