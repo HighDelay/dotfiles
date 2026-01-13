@@ -17,7 +17,7 @@ If you are moving to Wayland/Hyprland, new configurations have been added:
 * **Dependencies:** `hyprland`, `waybar`, `swww` (wallpaper), `rofi-wayland` (or rofi), `grim` & `slurp` (screenshots), `wl-clipboard`, `swaynotificationcenter`.
 
 ```shell
-yay -Sy hyprland hyprlock waybar swww grim slurp wl-clipboard wtype cliphist rofi-wayland swaync htop cozette-otb ipa-fonts noto-fonts zsh betterlockscreen fastfetch thunar thunar-volman thunar-archive-plugin polkit polkit-gnome dbus gnome-keyring tumbler ffmpegthumbnailer gvfs nwg-look cmus mpd mpc rmpc kitty lsp-plugins easyeffects pipewire pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack
+yay -Sy hyprland hyprlock xdg-desktop-portal-hyprland waybar swww grim slurp wl-clipboard wtype cliphist rofi-wayland swaync htop cozette-otb ipa-fonts noto-fonts zsh fastfetch thunar thunar-volman thunar-archive-plugin polkit hyprpolkitagent dbus gnome-keyring tumbler ffmpegthumbnailer gvfs nwg-look cmus mpd mpc rmpc kitty lsp-plugins easyeffects pipewire pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack
 ```
 
 To start Hyprland, usually just run `start-hyprland` from TTY or select it in your display manager.
