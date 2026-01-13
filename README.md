@@ -44,6 +44,11 @@ fi
 yay -Sy bspwm polybar rofi scrot sxhkd picom dunst rxvt-unicode urxvt-perls htop feh cozette-otb ipa-fonts noto-fonts zsh betterlockscreen fastfetch thunar thunar-volman thunar-archive-plugin polkit polkit-gnome dbus gnome-keyring tumbler ffmpegthumbnailer gvfs lxappearance xorg-server xorg-xinit xorg-xsetroot xclip cmus mpd mpc rmpc kitty lsp-plugins easyeffects
 ```
 
+```shell
+# Optionally install x11libre-server instead of the normal X server
+sh -c "$(curl -fsSL https://x11libre.net/repo/arch_based/x86_64/install-xlibre.sh)"
+```
+
 ## GTK themes, icons, and cursors to match the config
 * **Icon:** [Papirus Cyan](https://www.pling.com/p/1166289/)
 * **Theme:** [Graphite Dark Gtk](https://www.gnome-look.org/p/1598493)
