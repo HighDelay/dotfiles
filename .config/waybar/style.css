@@ -39,7 +39,9 @@ window#waybar.hidden {
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: transparent;
+    color: #eb4d4b;
+    border-bottom: 3px solid #eb4d4b;
 }
 
 #mode {
