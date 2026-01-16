@@ -22,6 +22,14 @@ yay -Sy hyprland hyprlock xdg-desktop-portal-hyprland waybar swww grim slurp wl-
 
 To start Hyprland, usually just run `start-hyprland` from TTY or select it in your display manager.
 
+Autostart Hyprland when logging in from TTY:
+```shell
+## .zprofile file
+if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
+  start-hyprland
+fi
+```
+
 ## GTK themes, icons, and cursors to match the config
 * **Icon:** [Papirus Cyan](https://www.pling.com/p/1166289/)
 * **Theme:** [Graphite Dark Gtk](https://www.gnome-look.org/p/1598493)

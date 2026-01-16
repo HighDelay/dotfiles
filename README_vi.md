@@ -11,16 +11,25 @@ git clone https://github.com/HighDelay/dotfiles/ && cd dotfiles && cp -rv .* ~/ 
 
 ## Thiết lập Hyprland (Wayland)
 Nếu bạn chuyển sang Wayland/Hyprland, các configs mới đã được thêm vào:
-* **WM (Quản lý cửa sổ):** hyprland (config trong `.config/hypr/hyprland.conf`)
+* **WM (Window manager):** hyprland (config trong `.config/hypr/hyprland.conf`)
 * **Thanh trạng thái:** waybar (config trong `.config/waybar/`)
 * **Phím tắt:** Được map 1:1 từ sxhkd sang config hyprland.
-* **Các phụ thuộc:** `hyprland`, `waybar`, `swww` (hình nền), `rofi-wayland` (hoặc rofi), `grim` & `slurp` (chụp màn hình), `wl-clipboard`, `swaynotificationcenter`.
+* **Dependencies:** `hyprland`, `waybar`, `swww` (hình nền), `rofi-wayland` (hoặc rofi), `grim` & `slurp` (chụp màn hình), `wl-clipboard`, `swaynotificationcenter`.
 
 ```shell
 yay -Sy hyprland hyprlock xdg-desktop-portal-hyprland waybar swww grim slurp wl-clipboard wtype cliphist rofi-wayland swaync htop cozette-otb ipa-fonts noto-fonts zsh fastfetch thunar thunar-volman thunar-archive-plugin polkit hyprpolkitagent dbus gnome-keyring tumbler ffmpegthumbnailer gvfs nwg-look cmus mpd mpc rmpc kitty lsp-plugins easyeffects fcitx5-bamboo fcitx5-im pipewire pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack
 ```
 
 Để khởi động Hyprland, thường chỉ cần chạy `start-hyprland` từ TTY hoặc chọn nó trong display manager của bạn.
+
+Tự khởi động Hyprland khi bạn login vào từ TTY:
+```shell
+## .zprofile file
+if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
+  start-hyprland
+fi
+```
+
 ## GTK themes, icons, và cursors để phù hợp với configs
 * **Icon:** [Papirus Cyan](https://www.pling.com/p/1166289/)
 * **Theme:** [Graphite Dark Gtk](https://www.gnome-look.org/p/1598493)
