@@ -1,3 +1,7 @@
+To install this bspwm config, run the following command:
+```shell
+cp -rv ~/dotfiles/bspwm_backup/* ~/.config/
+```
 To set wallpaper, use feh: 
 ```shell
 feh --bg-fill /path/to/your/wallpaper
