@@ -18,7 +18,8 @@ su -c "cp -rv nvml-undervolt.py /usr/local/sbin/nvml-undervolt && chmod a+x /usr
 * **--core-offset 160** (See the img above "+160 offset" for 1960Mhz at 925mV)
 * **--memory-offset 1400** (This adds 700Mhz to VRAM Clock)
 * **--target-clock 1960** (The clock at which you want to undervolt - in my case, 1960)
-* **--transition-clock 300** (Idle clock is recommended)
+* **--transition-clock 900** (The clock at which the script will trigger the 'nvmlDeviceSetGpuLockedClocks')
+* **--sleep 2.0**
 
 # nvml-undervolt
 
