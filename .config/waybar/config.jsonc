@@ -1,40 +1,45 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 30,
-    "margin-top": 10,
+    "height": 36,
+    "margin-top": 8,
     "margin-left": 10,
     "margin-right": 10,
-    "spacing": 4,
+    "spacing": 0,
     "modules-left": [
         "custom/launcher",
-        "custom/separator",
         "hyprland/workspaces",
-        "custom/separator",
+        "custom/separator-dot",
         "hyprland/window"
     ],
     "modules-center": [
-        "network"
+        "clock"
     ],
     "modules-right": [
-        "temperature",
+        "tray",
+        "custom/separator-dot",
+        "network",
+        "pulseaudio",
+        "custom/separator-dot",
         "cpu",
+        "temperature",
         "disk",
         "battery",
-        "custom/separator",
-        "pulseaudio",
-        "clock",
-        "tray",
-        "custom/separator",
+        "custom/separator-dot",
         "custom/powermenu"
     ],
-    // Separator module
-    "custom/separator": {
-        "format": "|",
+    // Separator
+    "custom/separator-dot": {
+        "format": "·",
         "interval": "once",
         "tooltip": false
     },
-    // Modules configuration
+    // --- Left Modules ---
+    "custom/launcher": {
+        "format": "󰣇",
+        "tooltip": false,
+        "on-click": "rofi -show drun -theme $HOME/.config/rofi/config.rasi"
+    },
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
@@ -47,47 +52,82 @@
             "5": "五",
             "6": "六",
             "7": "七",
-            "urgent": "*",
-            "focused": "#",
+            "8": "八",
+            "9": "九",
+            "10": "十",
+            "urgent": "",
+            "focused": "",
             "default": ""
+        },
+        "persistent-workspaces": {
+            "*": 5
         }
     },
     "hyprland/window": {
-        "format": "{title}",
-        "max-length": 44,
+        "format": "{}",
+        "max-length": 40,
         "rewrite": {
-            "(.*) - Kitty": "$1"
+            "(.*) — Mozilla Firefox": "󰈹 $1",
+            "(.*) - Kitty": " $1",
+            "(.*) - Visual Studio Code": "󰨞 $1",
+            "(.*) - Thunar": "󰉋 $1",
+            "(.*) - Discord": "󰙯 $1",
+            "": "󰋜 Desktop"
         }
     },
-    "custom/launcher": {
-        "format": "♥",
-        "on-click": "rofi -show drun -theme $HOME/.config/rofi/config.rasi"
+    // --- Center ---
+    "clock": {
+        "format": "  {:%H:%M}",
+        "format-alt": "  {:%A, %d %B %Y  ·  %H:%M:%S}",
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+        "interval": 1
     },
+    // --- Right Modules ---
     "network": {
-        "format-wifi": "直 {essid} | {ipaddr} | {bandwidthTotalBytes}",
-        "format-ethernet": " {ifname} | {ipaddr} | {bandwidthTotalBytes}",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "interval": 3,
+        "format-wifi": "󰤨 {essid}",
+        "format-ethernet": "󰈁 {ipaddr}",
+        "format-linked": "󰈂 No IP",
+        "format-disconnected": "󰤭 Off",
+        "format-alt": "  {bandwidthUpBytes}   {bandwidthDownBytes}",
+        "tooltip-format": "Interface: {ifname}\nIP: {ipaddr}/{cidr}\nGateway: {gwaddr}\nSignal: {signalStrength}%\n {bandwidthUpBytes}  {bandwidthDownBytes}"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "󰂯 {volume}%",
+        "format-bluetooth-muted": "󰂲 Muted",
+        "format-muted": "󰖁 Muted",
+        "format-icons": {
+            "headphone": "󰋋",
+            "phone": "",
+            "portable": "",
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "on-click": "pavucontrol",
+        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-",
+        "tooltip-format": "{desc}\nVolume: {volume}%"
+    },
+    "cpu": {
+        "interval": 3,
+        "format": "󰍛 {usage}%",
+        "tooltip-format": "CPU Usage: {usage}%\n{avg_frequency} GHz",
+        "on-click": "kitty --single-instance btop"
     },
     "temperature": {
         "thermal-zone": 1,
         "critical-threshold": 80,
-        "format": "{icon} {temperatureC}°C",
-        "format-icons": [
-            "",
-            "",
-            ""
-        ]
-    },
-    "cpu": {
-        "format": "󰔟 {usage}%",
-        "tooltip": false
+        "format": "{icon} {temperatureC}°",
+        "format-critical": " {temperatureC}°",
+        "format-icons": ["", "", ""],
+        "tooltip-format": "Temperature: {temperatureC}°C / {temperatureF}°F"
     },
     "disk": {
         "interval": 30,
-        "format": " {free}",
-        "path": "/"
+        "format": "󰋊 {free}",
+        "path": "/",
+        "tooltip-format": "Disk /\nTotal: {total}\nUsed: {used} ({percentage_used}%)\nFree: {free} ({percentage_free}%)"
     },
     "battery": {
         "states": {
@@ -95,45 +135,21 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% 󰁹",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
-        "format-icons": [
-            "󰁺",
-            "󰁼",
-            "󰁾",
-            "󰂀",
-            "󰁹"
-        ]
-    },
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-bluetooth": "{volume}% {icon}",
-        "format-bluetooth-muted": " {icon}",
-        "format-muted": "  muted",
-        "format-icons": {
-            "headphone": "",
-            "phone": "",
-            "portable": "",
-            "default": [
-                "",
-                "",
-                ""
-            ]
-        },
-        "on-click": "pavucontrol"
-    },
-    "clock": {
-        "format": "{:%d %b, %H:%M}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+        "format": "{icon} {capacity}%",
+        "format-full": "󰁹 Full",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": "󰚥 {capacity}%",
+        "format-alt": "{icon} {time}",
+        "format-icons": ["󰂎", "󰁺", "󰁼", "󰁾", "󰂀", "󰁹"],
+        "tooltip-format": "Battery: {capacity}%\nPower: {power:.1f}W\nTime to {timeTo}: {time}"
     },
     "tray": {
-        "spacing": 10
+        "icon-size": 15,
+        "spacing": 8
     },
     "custom/powermenu": {
         "format": "⏻",
+        "tooltip": false,
         "on-click": "$HOME/.config/rofi/powermenu/powermenu.sh"
     }
 }
