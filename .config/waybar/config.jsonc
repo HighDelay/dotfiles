@@ -41,7 +41,6 @@
         "on-click": "rofi -show drun -theme $HOME/.config/rofi/config.rasi"
     },
     "hyprland/workspaces": {
-        "disable-scroll": true,
         "all-outputs": true,
         "format": "{icon}",
         "format-icons": {
@@ -101,7 +100,11 @@
             "headphone": "󰋋",
             "phone": "",
             "portable": "",
-            "default": ["󰕿", "󰖀", "󰕾"]
+            "default": [
+                "󰕿",
+                "󰖀",
+                "󰕾"
+            ]
         },
         "on-click": "pavucontrol",
         "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
@@ -120,7 +123,11 @@
         "critical-threshold": 80,
         "format": "󰔏 {temperatureC}°",
         "format-critical": "󰸁 {temperatureC}°",
-        "format-icons": ["󰔏", "󰔏", "󰸁"],
+        "format-icons": [
+            "󰔏",
+            "󰔏",
+            "󰸁"
+        ],
         "tooltip-format": "Temperature: {temperatureC}°C / {temperatureF}°F"
     },
     "disk": {
@@ -140,7 +147,14 @@
         "format-charging": "󰂄 {capacity}%",
         "format-plugged": "󰚥 {capacity}%",
         "format-alt": "{icon} {time}",
-        "format-icons": ["󰂎", "󰁺", "󰁼", "󰁾", "󰂀", "󰁹"],
+        "format-icons": [
+            "󰂎",
+            "󰁺",
+            "󰁼",
+            "󰁾",
+            "󰂀",
+            "󰁹"
+        ],
         "tooltip-format": "Battery: {capacity}%\nPower: {power:.1f}W\nTime to {timeTo}: {time}"
     },
     "tray": {
