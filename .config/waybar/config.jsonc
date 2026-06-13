@@ -77,8 +77,8 @@
     },
     // --- Center ---
     "clock": {
-        "format": "  {:%H:%M}",
-        "format-alt": "  {:%A, %d %B %Y  ·  %H:%M:%S}",
+        "format": "󰥔 {:%H:%M}",
+        "format-alt": "󰥔 {:%A, %d %B %Y  ·  %H:%M:%S}",
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
         "interval": 1
     },
@@ -111,16 +111,16 @@
     },
     "cpu": {
         "interval": 3,
-        "format": "󰍛 {usage}%",
+        "format": "󰻠 {usage}%",
         "tooltip-format": "CPU Usage: {usage}%\n{avg_frequency} GHz",
         "on-click": "kitty --single-instance btop"
     },
     "temperature": {
         "thermal-zone": 1,
         "critical-threshold": 80,
-        "format": "{icon} {temperatureC}°",
-        "format-critical": " {temperatureC}°",
-        "format-icons": ["", "", ""],
+        "format": "󰔏 {temperatureC}°",
+        "format-critical": "󰸁 {temperatureC}°",
+        "format-icons": ["󰔏", "󰔏", "󰸁"],
         "tooltip-format": "Temperature: {temperatureC}°C / {temperatureF}°F"
     },
     "disk": {
