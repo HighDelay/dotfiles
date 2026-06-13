@@ -14,7 +14,7 @@ If you are moving to Wayland/Hyprland, new configurations have been added:
 * **WM:** hyprland (config in `.config/hypr/hyprland.conf`)
 * **Bar:** waybar (config in `.config/waybar/`)
 * **Shortcuts:** Mapped 1:1 from sxhkd to local hyprland config.
-* **Dependencies:** `hyprland`, `waybar`, `swww` (wallpaper), `rofi-wayland` (or rofi), `grim` & `slurp` (screenshots), `wl-clipboard`, `swaynotificationcenter`.
+* **Dependencies:** `hyprland`, `waybar`, `awww` (wallpaper), `rofi-wayland` (or rofi), `grim` & `slurp` (screenshots), `wl-clipboard`, `swaynotificationcenter`.
 
 ```shell
 yay -Sy hyprland hyprlock xdg-desktop-portal-hyprland waybar awww grim slurp wl-clipboard wtype cliphist rofi-wayland swaync htop cozette-otb ipa-fonts noto-fonts zsh fastfetch thunar thunar-volman thunar-archive-plugin polkit hyprpolkitagent dbus gnome-keyring tumbler ffmpegthumbnailer gvfs nwg-look nwg-displays cmus mpd mpc rmpc kitty lsp-plugins easyeffects fcitx5-bamboo fcitx5-im pipewire pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack imagemagick
