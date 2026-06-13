@@ -17,7 +17,7 @@ If you are moving to Wayland/Hyprland, new configurations have been added:
 * **Dependencies:** `hyprland`, `waybar`, `awww` (wallpaper), `rofi-wayland` (or rofi), `grim` & `slurp` (screenshots), `wl-clipboard`, `swaynotificationcenter`.
 
 ```shell
-yay -Sy hyprland hyprlock xdg-desktop-portal-hyprland waybar awww grim slurp wl-clipboard wtype cliphist rofi-wayland swaync htop cozette-otb ipa-fonts noto-fonts zsh fastfetch thunar thunar-volman thunar-archive-plugin polkit hyprpolkitagent dbus gnome-keyring tumbler ffmpegthumbnailer gvfs nwg-look nwg-displays cmus mpd mpc rmpc kitty lsp-plugins easyeffects fcitx5-bamboo fcitx5-im pipewire pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack imagemagick xnviewmp
+yay -Sy hyprland hyprlock xdg-desktop-portal-hyprland waybar awww grim slurp wl-clipboard wtype cliphist rofi-wayland swaync htop cozette-otb ipa-fonts noto-fonts zsh fastfetch thunar thunar-volman thunar-archive-plugin polkit hyprpolkitagent dbus gnome-keyring tumbler ffmpegthumbnailer gvfs nwg-look nwg-displays cmus mpd mpc rmpc kitty lsp-plugins easyeffects fcitx5-bamboo fcitx5-im pipewire pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack imagemagick xnviewmp btop
 ```
 
 To start Hyprland, usually just run `start-hyprland` from TTY or select it in your display manager.
@@ -31,7 +31,7 @@ fi
 ```
 
 ## GTK themes, icons, and cursors to match the config
-* **Icon:** [Papirus Cyan](https://www.pling.com/p/1166289/)
+* **Icon:** [Papirus Red](https://www.pling.com/p/1166289/)
 * **Theme:** [Graphite Dark Gtk](https://www.gnome-look.org/p/1598493)
 * **Cursor:** [Future Dark Cursors](https://www.gnome-look.org/p/1457884)
 
