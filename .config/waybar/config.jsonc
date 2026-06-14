@@ -162,7 +162,7 @@
         "spacing": 8
     },
     "custom/powermenu": {
-        "format": "⏻",
+        "format": "󰐥",
         "tooltip": false,
         "on-click": "$HOME/.config/rofi/powermenu/powermenu.sh"
     }
