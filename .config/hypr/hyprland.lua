@@ -243,8 +243,11 @@ hl.bind(mainMod .. " + SHIFT + J", hl.dsp.window.move({ direction = "down" }))
 hl.bind(mainMod .. " + SHIFT + K", hl.dsp.window.move({ direction = "up" }))
 hl.bind(mainMod .. " + SHIFT + L", hl.dsp.window.move({ direction = "right" }))
 
--- Window Switching
-hl.bind("ALT + Tab", hl.dsp.focus({ window = "next" }))
+-- Window Switching (ALT+Tab)
+hl.bind("ALT + Tab", function()
+    hl.dispatch(hl.dsp.window.cycle_next())
+    hl.dispatch(hl.dsp.window.bring_to_top())
+end)
 
 -- Switch Workspaces (1-10) + Move Window to Workspace
 for i = 1, 10 do
@@ -254,8 +257,8 @@ for i = 1, 10 do
 end
 
 -- Mouse: scroll through workspaces
-hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
-hl.bind(mainMod .. " + mouse_up",   hl.dsp.focus({ workspace = "e-1" }))
+hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e-1" }))
+hl.bind(mainMod .. " + mouse_up",   hl.dsp.focus({ workspace = "e+1" }))
 
 -- Mouse: move/resize windows
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
