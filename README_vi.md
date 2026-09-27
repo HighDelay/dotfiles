@@ -5,7 +5,10 @@
 
 Để cài đặt, dán các lệnh sau vào terminal:
 ```shell
-git clone https://github.com/HighDelay/dotfiles/ && cd dotfiles && cp -rv .* ~/ ; rm -rf ~/.git
+git clone https://github.com/HighDelay/dotfiles/
+cd dotfiles
+bash install.sh --dry-run
+bash install.sh
 ```
 **Lưu ý:** Configs cũ cho BSPWM, Polybar và SXHKD đã được chuyển sang thư mục `dotfiles/bspwm_backup/`.
 
@@ -16,8 +19,11 @@ Nếu bạn chuyển sang Wayland/Hyprland, các configs mới đã được th�
 * **Phím tắt:** Được map 1:1 từ sxhkd sang config hyprland.
 * **Dependencies:** `hyprland`, `waybar`, `awww` (hình nền), `rofi-wayland` (hoặc rofi), `grim` & `slurp` (chụp màn hình), `wl-clipboard`, `swaynotificationcenter`.
 
+Dependencies: [`packages.txt`](packages.txt). Install/uninstall options and backup details: [English README](README.md#uninstall).
+
 ```shell
-yay -Sy hyprland hyprlock xdg-desktop-portal-hyprland waybar-git awww grim slurp wl-clipboard wtype cliphist rofi-wayland swaync htop cozette-otb ipa-fonts noto-fonts zsh fastfetch thunar thunar-volman thunar-archive-plugin polkit hyprpolkitagent dbus gnome-keyring tumbler ffmpegthumbnailer gvfs nwg-look cmus mpd mpc rmpc kitty lsp-plugins easyeffects fcitx5-bamboo fcitx5-im pipewire pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack imagemagick xnviewmp btop
+bash uninstall.sh --dry-run
+bash uninstall.sh
 ```
 
 Để khởi động Hyprland, thường chỉ cần chạy `start-hyprland` từ TTY hoặc chọn nó trong display manager của bạn.
